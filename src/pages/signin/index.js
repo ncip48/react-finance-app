@@ -47,44 +47,36 @@ export default function Signin() {
   };
 
   return (
-    <Container>
-      <div className="vh-100">
-        <div
-          className="d-flex flex-column justify-content-between p-2"
-          style={{ height: "inherit" }}
-        >
-          <div
-            className="d-flex flex-column justify-content-center"
-            style={{ height: "inherit" }}
-          >
-            <h1 className="text-center fw-bold">Log in</h1>
-            <h5 className="mb-4 text-center">Fill the form to log in</h5>
-            <Card>
-              <Input
-                label="Email"
-                placeholder="Enter your email"
-                type="email"
-                name="email"
-                onChangeText={handleChange}
-              />
-              <Input
-                label="Password"
-                placeholder="Enter your password"
-                type="password"
-                name="password"
-                onChangeText={handleChange}
-              />
-            </Card>
-          </div>
-          <Button
-            title="Log in"
-            block
-            radius
-            disabled={!valid}
-            style={{ marginBottom: 15 }}
-            onClick={() => buttonAction()}
-          />
+    <Container fullHeight>
+      <div className="d-flex flex-column justify-content-between p-2 h-100">
+        <div className="d-flex flex-column justify-content-center h-100">
+          <h1 className="text-center fw-bold">Log in</h1>
+          <h5 className="mb-4 text-center">Fill the form to log in</h5>
+          <Card>
+            <Input
+              label="Email"
+              placeholder="Enter your email"
+              type="email"
+              name="email"
+              onChangeText={handleChange}
+            />
+            <Input
+              label="Password"
+              placeholder="Enter your password"
+              type="password"
+              name="password"
+              onChangeText={handleChange}
+            />
+          </Card>
         </div>
+        <Button
+          title="Log in"
+          block
+          radius
+          disabled={!valid}
+          style={{ marginBottom: 15 }}
+          onClick={() => buttonAction()}
+        />
       </div>
     </Container>
   );
