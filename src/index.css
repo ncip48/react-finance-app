@@ -3,6 +3,11 @@
 }
 
 body {
+  background-color: white;
+}
+
+/* any col-md- class  */
+[class*="col-"] {
   background-color: #e8e8e8 !important;
 }
 
