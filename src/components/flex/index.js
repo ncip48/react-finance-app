@@ -8,6 +8,8 @@ export default function Flex({
   fullHeight = false,
   column,
   row,
+  gap,
+  width,
 }) {
   return (
     <div
@@ -16,6 +18,8 @@ export default function Flex({
       } align-items-${align}
       ${column ? "flex-column" : ""}
       ${row ? "flex-row" : ""}
+      ${gap ? `gap-${gap}` : ""}
+      ${width ? `w-${width}` : ""}
       `}
     >
       {children}
