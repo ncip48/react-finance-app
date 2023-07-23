@@ -6,7 +6,7 @@ export default function Spacer({ height, bg, style }) {
     <div style={style}>
       <Container centerX bg={bg}>
         <div
-          className="bg-primary w-100"
+          className={`bg-${bg} w-100`}
           style={{ height, marginBottom: 0 }}
         ></div>
       </Container>

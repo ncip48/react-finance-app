@@ -14,6 +14,10 @@ body {
 .bg-gray {
   background-color: #e8e8e8 !important;
 }
+
+.bg-white {
+  background-color: white !important;
+}
 /* remove the active border on input or other form */
 
 textarea:focus,

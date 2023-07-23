@@ -24,17 +24,17 @@ export default function BottomNavigation({ items, active, navigation }) {
                 height: center === index ? "inherit" : "fit-content",
               }}
             >
-              {center !== index && active === item.name && (
-                <Spacer
-                  height={2}
-                  bg="primary"
-                  style={{
-                    marginTop: -5,
-                    position: "absoulte",
-                    marginBottom: 8,
-                  }}
-                />
-              )}
+              <Spacer
+                height={2}
+                bg={
+                  center !== index && active === item.name ? "primary" : "white"
+                }
+                style={{
+                  marginTop: -5,
+                  position: "absoulte",
+                  marginBottom: 8,
+                }}
+              />
               <div className="d-flex flex-column align-items-center">
                 <Icon
                   name={active === item.name ? `${item.icon}-fill` : item.icon}

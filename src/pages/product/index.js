@@ -12,7 +12,7 @@ import {
 import itemBottoms from "../../constants/itemBottoms";
 import { formatRupiah } from "../../helpers";
 
-export default function Home() {
+export default function Product() {
   return (
     <>
       <Navbar noMenu fixed>
@@ -45,7 +45,7 @@ export default function Home() {
           <h5>asodaso</h5>
         </Card>
       </Container>
-      <BottomNavigation items={itemBottoms} active="Home" />
+      <BottomNavigation items={itemBottoms} active="Products" />
     </>
   );
 }
