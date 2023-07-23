@@ -10,6 +10,7 @@ export default function Container({
   padding,
   fixedTop,
   fixedBottom,
+  spacer,
 }) {
   return (
     <div
@@ -28,9 +29,9 @@ export default function Container({
         h-100`}
       >
         <div
-          className={`col-xl-4 col-lg-6 col-md-8 h-100 bg-${bg} ${
-            padding ? "p-2" : ""
-          }`}
+          className={`col-xl-${spacer ? 12 : 4} col-lg-${
+            spacer ? 12 : 6
+          } col-md-${spacer ? 12 : 8} h-100 bg-${bg} ${padding ? "p-2" : ""}`}
         >
           {children}
         </div>

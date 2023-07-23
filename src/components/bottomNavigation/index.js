@@ -25,6 +25,7 @@ export default function BottomNavigation({ items, active, navigation }) {
               }}
             >
               <Spacer
+                spacer
                 height={2}
                 bg={
                   center !== index && active === item.name ? "primary" : "white"
