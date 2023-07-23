@@ -23,15 +23,15 @@ export default function Home() {
       <Spacer height={55} bg="primary" />
       <Container centerX bg="primary">
         <div className="bg-primary">
-          <h6 className="text-white fw-normal mb-1">Total Balance</h6>
+          <small className="text-white fw-normal mb-1">Total Balance</small>
           <h2 className="text-white">{formatRupiah("1315800622,31")}</h2>
           <Flex align="center" justify="flex-start">
             <Icon name="caret-up-fill" theme="warning" size=".8rem" />
-            <h6 className="text-white fw-normal mb-0 ms-2">
+            <small className="text-white fw-normal mb-0 ms-2">
               {formatRupiah("243489330,00")} (+14.37%)
-            </h6>
+            </small>
           </Flex>
-          <Icon name="house" />
+          <Spacer height={130} bg="primary" />
         </div>
       </Container>
       <BottomNavigation items={itemBottoms} active="Home" />

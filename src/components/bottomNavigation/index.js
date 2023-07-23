@@ -6,12 +6,9 @@ import Container from "../container";
 export default function BottomNavigation({ items, active, navigation }) {
   const navigate = useNavigate();
   return (
-    // <div className="bottom-navigation fixed-bottom bg-white">
-    //   <div className="container-fluid">
     <Container centerX fixedBottom>
       <div className="row">
         {items.map((item, index) => {
-          //if center index then add bg-primary
           const center = Math.floor(items.length / 2);
           return (
             <div
@@ -28,7 +25,7 @@ export default function BottomNavigation({ items, active, navigation }) {
             >
               <div className="d-flex flex-column align-items-center">
                 <Icon
-                  name={item.icon}
+                  name={active === item.name ? `${item.icon}-fill` : item.icon}
                   theme={
                     center === index
                       ? "primary"
@@ -54,7 +51,5 @@ export default function BottomNavigation({ items, active, navigation }) {
         })}
       </div>
     </Container>
-    // </div>
-    // </div>
   );
 }
