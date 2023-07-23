@@ -21,8 +21,8 @@ export default function Icon({
         )}
         {badge && typeof badge === "string" && (
           <span
-            class="position-absolute top-1 translate-middle badge rounded-pill bg-danger"
-            style={{ fontSize: 10, top: 15 }}
+            class="position-absolute top-1 translate-middle badge rounded-pill bg-danger fw-normal"
+            style={{ fontSize: 10, top: 15, fontStyle: "normal" }}
           >
             {badge}
             <span class="visually-hidden">unread messages</span>

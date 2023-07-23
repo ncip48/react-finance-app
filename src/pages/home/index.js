@@ -8,7 +8,7 @@ export default function Home() {
         <Icon name="search" theme="white" />
         <Icon name="star" theme="white" />
         <Icon name="bell" theme="white" badge="9+" />
-        <Avatar source="https://avatars.githubusercontent.com/u/62829965?v=4" />
+        <Avatar source={require("../../assets/pp.jpg")} />
       </Navbar>
       <div style={{ height: 50 }}></div>
       <Container>
