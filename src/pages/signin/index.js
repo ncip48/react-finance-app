@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input, Container, Card } from "../../components";
+import { Button, Input, Container, Card, Flex } from "../../components";
 import { useNavigate } from "react-router-dom";
 
 export default function Signin() {
@@ -48,8 +48,8 @@ export default function Signin() {
 
   return (
     <Container fullHeight>
-      <div className="d-flex flex-column justify-content-between p-2 h-100">
-        <div className="d-flex flex-column justify-content-center h-100">
+      <Flex justify="between" padding fullHeight column>
+        <Flex fullHeight column>
           <h1 className="text-center fw-bold">Log in</h1>
           <h5 className="mb-4 text-center">Fill the form to log in</h5>
           <Card>
@@ -68,7 +68,13 @@ export default function Signin() {
               onChangeText={handleChange}
             />
           </Card>
-        </div>
+          <Flex justify="between" align="center" row>
+            <h6 className="text-center mt-3">Register Now</h6>
+            <h6 className="text-center mt-3 text-muted fw-normal">
+              Forgot Password
+            </h6>
+          </Flex>
+        </Flex>
         <Button
           title="Log in"
           block
@@ -77,7 +83,7 @@ export default function Signin() {
           style={{ marginBottom: 15 }}
           onClick={() => buttonAction()}
         />
-      </div>
+      </Flex>
     </Container>
   );
 }
