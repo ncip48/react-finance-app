@@ -10,6 +10,7 @@ export default function Flex({
   row,
   gap,
   width,
+  bg,
 }) {
   return (
     <div
@@ -20,6 +21,7 @@ export default function Flex({
       ${row ? "flex-row" : ""}
       ${gap ? `gap-${gap}` : ""}
       ${width ? `w-${width}` : ""}
+      bg-${bg}
       `}
     >
       {children}

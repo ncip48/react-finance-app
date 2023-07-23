@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Home",
+    "icon": "house",
+    "link": "/home"
+  },
+  {
+    "name": "Products",
+    "icon": "box2",
+    "link": "/products"
+  },
+  {
+    "name": "Plus",
+    "icon": "plus-circle-fill",
+    "link": "/worked"
+  },
+  {
+    "name": "Transaction",
+    "icon": "arrow-left-right",
+    "link": "/transaction"
+  },
+  {
+    "name": "Portofolio",
+    "icon": "pie-chart",
+    "link": "/portofolio"
+  }
+]

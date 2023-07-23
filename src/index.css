@@ -8,9 +8,12 @@ body {
 
 /* any col-md- class  */
 [class*="col-"] {
-  background-color: #e8e8e8 !important;
+  /* background-color: #e8e8e8 !important; */
 }
 
+.bg-gray {
+  background-color: #e8e8e8 !important;
+}
 /* remove the active border on input or other form */
 
 textarea:focus,

@@ -47,8 +47,8 @@ export default function Signin() {
   };
 
   return (
-    <Container fullHeight>
-      <Flex justify="between" padding fullHeight column>
+    <Container centerXY fullHeight bg="gray">
+      <Flex justify="between" padding fullHeight column bg="gray">
         <Flex fullHeight column>
           <h1 className="text-center fw-bold">Log in</h1>
           <h5 className="mb-4 text-center">Fill the form to log in</h5>
