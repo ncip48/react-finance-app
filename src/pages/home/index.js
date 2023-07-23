@@ -6,6 +6,7 @@ import {
   Flex,
   Icon,
   Navbar,
+  Spacer,
 } from "../../components";
 import itemBottoms from "../../constants/itemBottoms";
 import { formatRupiah } from "../../helpers";
@@ -19,12 +20,7 @@ export default function Home() {
         <Icon name="bell" theme="white" badge="9+" />
         <Avatar source={require("../../assets/pp.jpg")} />
       </Navbar>
-      <Container centerX bg="primary">
-        <div
-          className="bg-primary"
-          style={{ height: 55, marginBottom: -1 }}
-        ></div>
-      </Container>
+      <Spacer height={55} bg="primary" />
       <Container centerX bg="primary">
         <div className="bg-primary">
           <h6 className="text-white fw-normal mb-1">Total Balance</h6>
