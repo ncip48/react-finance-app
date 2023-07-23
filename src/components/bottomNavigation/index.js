@@ -2,6 +2,7 @@ import React from "react";
 import Icon from "../icon";
 import { useNavigate } from "react-router-dom";
 import Container from "../container";
+import Spacer from "../spacer";
 
 export default function BottomNavigation({ items, active, navigation }) {
   const navigate = useNavigate();
@@ -23,6 +24,17 @@ export default function BottomNavigation({ items, active, navigation }) {
                 height: center === index ? "inherit" : "fit-content",
               }}
             >
+              {center !== index && active === item.name && (
+                <Spacer
+                  height={2}
+                  bg="primary"
+                  style={{
+                    marginTop: -5,
+                    position: "absoulte",
+                    marginBottom: 8,
+                  }}
+                />
+              )}
               <div className="d-flex flex-column align-items-center">
                 <Icon
                   name={active === item.name ? `${item.icon}-fill` : item.icon}
