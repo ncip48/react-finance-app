@@ -1,9 +1,19 @@
 import React from "react";
 import Icon from "../icon";
 
-export default function ListItem({ type, title, subtitle, count, time }) {
+export default function ListItem({
+  type,
+  title,
+  subtitle,
+  count,
+  time,
+  onClick,
+}) {
   return (
-    <div className="d-flex align-items-center pt-4 ps-4">
+    <div
+      className="d-flex align-items-center pt-4 ps-4 cursor-pointer"
+      onClick={onClick}
+    >
       <i
         className={`bi bi-${
           type === "up"

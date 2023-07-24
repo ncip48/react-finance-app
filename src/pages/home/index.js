@@ -114,6 +114,9 @@ export default function Home() {
                 subtitle={item.actor}
                 count={item.count}
                 time={item.time}
+                onClick={() => {
+                  navigate("/worked");
+                }}
               />
             );
           })}

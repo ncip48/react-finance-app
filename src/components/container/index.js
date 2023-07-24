@@ -15,7 +15,7 @@ export default function Container({
 }) {
   return (
     <div
-      className={`container ${fullHeight && !height ? "vh-100" : ""} ${
+      className={`container-fluid ${fullHeight && !height ? "vh-100" : ""} ${
         fixedTop ? "fixed-top" : ""
       }
       ${fixedBottom ? "fixed-bottom" : ""}`}
@@ -32,7 +32,7 @@ export default function Container({
         <div
           className={`col-xl-${spacer ? 12 : 4} col-lg-${
             spacer ? 12 : 6
-          } col-md-${spacer ? 12 : 8} h-100 bg-${bg} ${padding ? "p-2" : ""}`}
+          } col-md-${spacer ? 12 : 12} h-100 bg-${bg} ${padding ? "p-2" : ""}`}
           style={{ borderRadius: spacer ? 20 : 0 }}
         >
           {children}
