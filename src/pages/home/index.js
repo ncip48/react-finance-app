@@ -36,14 +36,14 @@ export default function Home() {
               {formatRupiah("243489330,00")} (+14.37%)
             </small>
           </Flex>
-          <Spacer height={135} bg="primary" />
+          <Spacer height={125} bg="primary" />
         </div>
       </Container>
       <Container centerX bg="gray">
         <Card
           style={{
             position: "absoulte",
-            top: -105,
+            top: -100,
             borderRadius: 16,
             elevation: 3,
           }}

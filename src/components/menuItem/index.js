@@ -10,7 +10,7 @@ export default function MenuItem({ title, icon, index }) {
       onClick={() => navigate("/worked")}
     >
       <div className="d-flex align-items-center flex-column">
-        <Icon name={icon} size="2rem" />
+        <Icon name={icon} size="1.7rem" />
         <small
           className="mt-2 text-center"
           style={{
