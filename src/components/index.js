@@ -16,6 +16,7 @@ import TipItem from "./tipItem";
 import NewsItem from "./newsItem";
 import Header from "./header";
 import NotificationItem from "./notificationItem";
+import ProfileItem from "./profileItem";
 
 export {
   Button,
@@ -36,4 +37,5 @@ export {
   NewsItem,
   Header,
   NotificationItem,
+  ProfileItem,
 };

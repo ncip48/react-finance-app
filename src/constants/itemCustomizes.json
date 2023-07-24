@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Advance Settings",
+    "type": 0
+  },
+  {
+    "name": "Dark Mode",
+    "type": 1
+  },
+  {
+    "name": "Sign In with PIN Code",
+    "type": 1
+  },
+  {
+    "name": "Sign In with Fingerprint",
+    "type": 1
+  }
+]

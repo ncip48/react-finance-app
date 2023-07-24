@@ -63,7 +63,10 @@ export default function Home() {
           badge="9+"
           onClick={() => navigate("/notification")}
         />
-        <Avatar source={require("../../assets/pp.jpg")} />
+        <Avatar
+          source={require("../../assets/pp.jpg")}
+          onClick={() => navigate("/account")}
+        />
       </Navbar>
       <Spacer height={55} bg="primary" />
       <Container centerX bg="primary">
