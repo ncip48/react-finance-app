@@ -1,5 +1,12 @@
 import React from "react";
-import { Header, Icon } from "../../components";
+import {
+  Container,
+  Header,
+  Icon,
+  NotificationItem,
+  Spacer,
+} from "../../components";
+import itemNotifications from "../../constants/itemNotifications.json";
 
 export default function Notification() {
   return (
@@ -9,8 +16,20 @@ export default function Notification() {
         isBack
         iconRight={<Icon name="bell-slash" />}
       />
-      Notification
-      <h1>Notification</h1>
+      <Spacer height={50} bg="white" />
+      <Container centerX bg="white">
+        {itemNotifications.map((item, index) => {
+          return (
+            <NotificationItem
+              title={item.title}
+              subtitle={item.description}
+              date={item.date}
+              count={item.count}
+              type={item.type}
+            />
+          );
+        })}
+      </Container>
     </>
   );
 }

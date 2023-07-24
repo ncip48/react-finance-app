@@ -1,0 +1,66 @@
+[
+  {
+    "type": "received",
+    "title": "Payment Received",
+    "description": "John sent you $50",
+    "unread": true,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "sent",
+    "title": "Payment has been sent",
+    "description": "The money you sent to John was successfully sent",
+    "unread": true,
+    "badgeCount": 3,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "password",
+    "title": "Password changed",
+    "description": "Your password has been changed",
+    "unread": false,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "message",
+    "title": "New Messages",
+    "description": "You have new messages from John",
+    "unread": false,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "received",
+    "title": "Payment Received",
+    "description": "John sent you $50",
+    "unread": true,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "sent",
+    "title": "Payment has been sent",
+    "description": "The money you sent to John was successfully sent",
+    "unread": true,
+    "badgeCount": 3,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "password",
+    "title": "Password changed",
+    "description": "Your password has been changed",
+    "unread": false,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  },
+  {
+    "type": "message",
+    "title": "New Messages",
+    "description": "You have new messages from John",
+    "unread": false,
+    "badgeCount": 0,
+    "date": "5/3/2020 10:30 AM"
+  }
+]
