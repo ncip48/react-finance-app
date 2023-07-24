@@ -11,6 +11,8 @@ import Spacer from "./spacer";
 import MenuItem from "./menuItem";
 import Pill from "./pill";
 import ListItem from "./listItem";
+import Label from "./label";
+import TipItem from "./tipItem";
 
 export {
   Button,
@@ -26,4 +28,6 @@ export {
   MenuItem,
   Pill,
   ListItem,
+  Label,
+  TipItem,
 };

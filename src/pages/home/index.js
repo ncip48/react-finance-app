@@ -6,24 +6,33 @@ import {
   Container,
   Flex,
   Icon,
+  Label,
   ListItem,
   MenuItem,
   Navbar,
   Pill,
   Spacer,
+  TipItem,
 } from "../../components";
 import { formatRupiah } from "../../helpers";
 import { useNavigate } from "react-router-dom";
 import itemMenus from "../../constants/itemsMenus.json";
 import itemLists from "../../constants/itemLists.json";
 
-const pillList = [
+const pillLists = [
   "Model Portofolios",
   "Mutual Funds",
   "Bonds",
   "Model Portofolios",
   "Mutual Funds",
   "Bonds",
+];
+
+const tipLists = [
+  "Successful investing",
+  "Choosing a stable investment product",
+  "Successful investing",
+  "Choosing a stable investment product",
 ];
 
 export default function Home() {
@@ -90,9 +99,9 @@ export default function Home() {
         </Card>
       </Container>
       <Container centerX bg="gray">
-        <h3 className="fw-bold mb-3">Top 5 List</h3>
+        <Label title="Top 5 List" />
         <div className="container-scroll gap-2 mb-1" onWheel={handleScroll}>
-          {pillList.map((item, index) => {
+          {pillLists.map((item, index) => {
             return (
               <Pill
                 title={item}
@@ -121,6 +130,17 @@ export default function Home() {
             );
           })}
         </Card>
+        <Spacer height={30} />
+        <Label
+          title="Investment Tips"
+          hasSeeMore
+          onClick={() => navigate("/worked")}
+        />
+        <div className="container-scroll gap-3 mb-1" onWheel={handleScroll}>
+          {tipLists.map((item, index) => {
+            return <TipItem title={item} key={index} />;
+          })}
+        </div>
       </Container>
       <Spacer height={100} bg="gray" />
       <BottomNavigation active="Home" />
