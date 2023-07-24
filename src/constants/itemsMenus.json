@@ -1,34 +1,34 @@
 [
   {
     "title": "Model",
-    "icon": "plus-circle"
+    "icon": "back"
   },
   {
     "title": "Calculator",
-    "icon": "plus-circle"
+    "icon": "calculator-fill"
   },
   {
     "title": "Goal Jurney",
-    "icon": "plus-circle"
+    "icon": "cursor-fill"
   },
   {
     "title": "Financial Check Up",
-    "icon": "plus-circle"
+    "icon": "currency-exchange"
   },
   {
     "title": "News",
-    "icon": "plus-circle"
+    "icon": "newspaper"
   },
   {
     "title": "Installment Products",
-    "icon": "plus-circle"
+    "icon": "collection-fill"
   },
   {
     "title": "Product Investment",
-    "icon": "plus-circle"
+    "icon": "box-seam-fill"
   },
   {
     "title": "Other",
-    "icon": "box"
+    "icon": "grid-fill"
   }
 ]
