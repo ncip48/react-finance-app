@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Container from "../container";
 import Spacer from "../spacer";
 
-export default function BottomNavigation({ items, active, navigation }) {
+export default function BottomNavigation({ items, active }) {
   const navigate = useNavigate();
   return (
     <Container centerX fixedBottom>
@@ -13,7 +13,7 @@ export default function BottomNavigation({ items, active, navigation }) {
           const center = Math.floor(items.length / 2);
           return (
             <div
-              className={`col text-center ${
+              className={`col cursor-pointer text-center ${
                 center === index ? "my-0 align-self-center" : "my-2"
               }`}
               key={index}

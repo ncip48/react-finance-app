@@ -10,7 +10,7 @@ export default function Button({
   onClick,
 }) {
   return (
-    <div className={block ? `d-grid gap-2` : ""} style={style}>
+    <div className={block ? `d-grid gap-2 w-100` : ""} style={style}>
       <button
         className={`btn btn-${theme} py-2`}
         disabled={disabled}

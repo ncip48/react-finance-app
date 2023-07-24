@@ -6,6 +6,7 @@ export default function Icon({
   size = "1.4rem",
   theme = "primary",
   badge,
+  onClick,
 }) {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Icon({
           !badge ? "d-flex align-items-center" : ""
         }`}
         style={{ color, fontSize: size, height: !badge ? size : "" }}
+        onClick={onClick}
       >
         {badge && typeof badge === "boolean" && (
           <span

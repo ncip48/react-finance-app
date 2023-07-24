@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Model",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Calculator",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Goal Jurney",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Financial Check Up",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "News",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Installment Products",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Product Investment",
+    "icon": "plus-circle"
+  },
+  {
+    "title": "Other",
+    "icon": "box"
+  }
+]

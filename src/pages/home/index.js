@@ -6,18 +6,22 @@ import {
   Container,
   Flex,
   Icon,
+  MenuItem,
   Navbar,
   Spacer,
 } from "../../components";
 import itemBottoms from "../../constants/itemBottoms";
 import { formatRupiah } from "../../helpers";
+import { useNavigate } from "react-router-dom";
+import itemMenus from "../../constants/itemsMenus.json";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar noMenu fixed>
-        <Icon name="search" theme="white" />
-        <Icon name="star" theme="white" />
+        <Icon name="search" theme="white" onClick={() => navigate("/worked")} />
+        <Icon name="star" theme="white" onClick={() => navigate("/worked")} />
         <Icon name="bell" theme="white" badge="9+" />
         <Avatar source={require("../../assets/pp.jpg")} />
       </Navbar>
@@ -32,17 +36,30 @@ export default function Home() {
               {formatRupiah("243489330,00")} (+14.37%)
             </small>
           </Flex>
-          <Spacer height={130} bg="primary" />
+          <Spacer height={135} bg="primary" />
         </div>
       </Container>
       <Container centerX bg="gray">
         <Card
           style={{
             position: "absoulte",
-            top: -50,
+            top: -105,
+            borderRadius: 16,
+            elevation: 3,
           }}
         >
-          <h5>asodaso</h5>
+          <div className="row">
+            {itemMenus.map((item, index) => {
+              return (
+                <MenuItem
+                  title={item.title}
+                  key={index}
+                  icon={item.icon}
+                  index={index}
+                />
+              );
+            })}
+          </div>
         </Card>
       </Container>
       <BottomNavigation items={itemBottoms} active="Home" />

@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Home, Product, Signin } from "../pages";
+import { Home, Product, Signin, Worked } from "../pages";
 
 export default function Routes() {
   return (
@@ -16,6 +16,7 @@ export default function Routes() {
           <Route path="/" element={<Navigate to="/signin" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/worked" element={<Worked />} />
         </Switch>
       </Fragment>
     </BrowserRouter>

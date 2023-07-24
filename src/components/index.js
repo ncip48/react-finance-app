@@ -8,6 +8,7 @@ import Navbar from "./navbar";
 import Avatar from "./avatar";
 import BottomNavigation from "./bottomNavigation";
 import Spacer from "./spacer";
+import MenuItem from "./menuItem";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Avatar,
   BottomNavigation,
   Spacer,
+  MenuItem,
 };
