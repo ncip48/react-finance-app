@@ -94,3 +94,17 @@ input[type="number"]:focus,
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/* For three-line clamp */
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Number of lines to display */
+  -webkit-line-clamp: 3;
+  /* Line height (optional, adjust to your design) */
+  line-height: 1.5rem;
+  /* Height of the container (number of lines * line height) */
+  height: 4.5rem; /* 3 lines * 1.5rem */
+}

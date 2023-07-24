@@ -10,6 +10,7 @@ import {
   ListItem,
   MenuItem,
   Navbar,
+  NewsItem,
   Pill,
   Spacer,
   TipItem,
@@ -18,6 +19,7 @@ import { formatRupiah } from "../../helpers";
 import { useNavigate } from "react-router-dom";
 import itemMenus from "../../constants/itemsMenus.json";
 import itemLists from "../../constants/itemLists.json";
+import itemNews from "../../constants/itemNews.json";
 
 const pillLists = [
   "Model Portofolios",
@@ -141,8 +143,28 @@ export default function Home() {
             return <TipItem title={item} key={index} />;
           })}
         </div>
+        <Spacer height={10} />
+        <Label
+          title="Lastest News"
+          hasSeeMore
+          onClick={() => navigate("/worked")}
+        />
+        <div className="container-scroll gap-3 mb-1" onWheel={handleScroll}>
+          {itemNews.map((item, index) => {
+            return (
+              <NewsItem
+                title={item.title}
+                image={item.image}
+                key={index}
+                onClick={() => {
+                  navigate("/worked");
+                }}
+              />
+            );
+          })}
+        </div>
       </Container>
-      <Spacer height={100} bg="gray" />
+      <Spacer height={80} bg="gray" />
       <BottomNavigation active="Home" />
     </>
   );

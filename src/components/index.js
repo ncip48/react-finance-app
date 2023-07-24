@@ -13,6 +13,7 @@ import Pill from "./pill";
 import ListItem from "./listItem";
 import Label from "./label";
 import TipItem from "./tipItem";
+import NewsItem from "./newsItem";
 
 export {
   Button,
@@ -30,4 +31,5 @@ export {
   ListItem,
   Label,
   TipItem,
+  NewsItem,
 };
