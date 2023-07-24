@@ -1,5 +1,5 @@
 /* eslint-disable eqeqeq */
-export const formatRupiah = (angka) => {
+export const formatRupiah = (angka, useK = false) => {
   if (angka == null) {
     return "IDR -";
   }
@@ -16,6 +16,13 @@ export const formatRupiah = (angka) => {
     rupiah += separator + ribuan.join(",");
   }
 
+  if (useK) {
+    return (
+      "IDR " + rupiah + (split[1] != undefined ? "." + split[1] : "") + "K"
+    );
+  }
+
   rupiah = split[1] != undefined ? rupiah + "." + split[1] : rupiah;
+
   return "IDR " + rupiah;
 };

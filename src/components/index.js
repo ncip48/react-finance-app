@@ -14,6 +14,7 @@ import ListItem from "./listItem";
 import Label from "./label";
 import TipItem from "./tipItem";
 import NewsItem from "./newsItem";
+import Header from "./header";
 
 export {
   Button,
@@ -32,4 +33,5 @@ export {
   Label,
   TipItem,
   NewsItem,
+  Header,
 };

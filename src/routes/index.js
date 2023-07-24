@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Home, Product, Signin, Worked } from "../pages";
+import { Home, Notification, Product, Signin, Worked } from "../pages";
 
 export default function Routes() {
   return (
@@ -17,6 +17,7 @@ export default function Routes() {
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/worked" element={<Worked />} />
+          <Route path="/notification" element={<Notification />} />
         </Switch>
       </Fragment>
     </BrowserRouter>
