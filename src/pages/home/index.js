@@ -6,17 +6,41 @@ import {
   Container,
   Flex,
   Icon,
+  ListItem,
   MenuItem,
   Navbar,
+  Pill,
   Spacer,
 } from "../../components";
-import itemBottoms from "../../constants/itemBottoms";
 import { formatRupiah } from "../../helpers";
 import { useNavigate } from "react-router-dom";
 import itemMenus from "../../constants/itemsMenus.json";
+import itemLists from "../../constants/itemLists.json";
+
+const pillList = [
+  "Model Portofolios",
+  "Mutual Funds",
+  "Bonds",
+  "Model Portofolios",
+  "Mutual Funds",
+  "Bonds",
+];
 
 export default function Home() {
   const navigate = useNavigate();
+
+  const [activePill, setActivePill] = React.useState(0);
+
+  const handleScroll = (event) => {
+    const container = event.target;
+    const scrollAmount = event.deltaY;
+    container.scrollTo({
+      top: 0,
+      left: container.scrollLeft + scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Navbar noMenu fixed>
@@ -29,7 +53,9 @@ export default function Home() {
       <Container centerX bg="primary">
         <div className="bg-primary">
           <small className="text-white fw-normal mb-1">Total Balance</small>
-          <h2 className="text-white">{formatRupiah("1315800622,31")}</h2>
+          <h2 className="text-white fw-bold">
+            {formatRupiah("1315800622,31")}
+          </h2>
           <Flex align="center" justify="flex-start">
             <Icon name="caret-up-fill" theme="warning" size=".8rem" />
             <small className="text-white fw-normal mb-0 ms-2">
@@ -39,13 +65,14 @@ export default function Home() {
           <Spacer height={125} bg="primary" />
         </div>
       </Container>
-      <Container centerX bg="gray">
+      <Container centerX bg="gray" height={130}>
         <Card
+          radius
           style={{
             position: "absoulte",
             top: -100,
             borderRadius: 16,
-            elevation: 3,
+            boxShadow: "0px 0px 12px 1px rgba(0,0,0,0.2)",
           }}
         >
           <div className="row">
@@ -62,7 +89,38 @@ export default function Home() {
           </div>
         </Card>
       </Container>
-      <BottomNavigation items={itemBottoms} active="Home" />
+      <Container centerX bg="gray">
+        <h3 className="fw-bold mb-3">Top 5 List</h3>
+        <div className="container-scroll gap-2 mb-1" onWheel={handleScroll}>
+          {pillList.map((item, index) => {
+            return (
+              <Pill
+                title={item}
+                key={index}
+                active={activePill === index}
+                index={index}
+                onClick={() => setActivePill(index)}
+              />
+            );
+          })}
+        </div>
+        <Card radius noPadding>
+          {itemLists.map((item, index) => {
+            return (
+              <ListItem
+                type={item.type}
+                key={index}
+                title={item.name}
+                subtitle={item.actor}
+                count={item.count}
+                time={item.time}
+              />
+            );
+          })}
+        </Card>
+      </Container>
+      <Spacer height={100} bg="gray" />
+      <BottomNavigation active="Home" />
     </>
   );
 }

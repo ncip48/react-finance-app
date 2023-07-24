@@ -52,7 +52,7 @@ export default function Signin() {
         <Flex fullHeight column>
           <h1 className="text-center fw-bold">Log in</h1>
           <h5 className="mb-4 text-center">Fill the form to log in</h5>
-          <Card>
+          <Card radius>
             <Input
               label="Email"
               placeholder="Enter your email"

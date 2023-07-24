@@ -3,11 +3,12 @@ import Icon from "../icon";
 import { useNavigate } from "react-router-dom";
 import Container from "../container";
 import Spacer from "../spacer";
+import itemBottoms from "../../constants/itemBottoms.json";
 
-export default function BottomNavigation({ items, active }) {
+export default function BottomNavigation({ items = itemBottoms, active }) {
   const navigate = useNavigate();
   return (
-    <Container centerX fixedBottom>
+    <Container centerX fixedBottom bg="white">
       <div className="row">
         {items.map((item, index) => {
           const center = Math.floor(items.length / 2);

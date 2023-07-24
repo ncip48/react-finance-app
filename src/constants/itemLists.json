@@ -1,0 +1,37 @@
+[
+  {
+    "type": "up",
+    "name": "Modal Aman Ketika Pandemi",
+    "actor": "Investor",
+    "count": "7.30%",
+    "time": "1Y"
+  },
+  {
+    "type": "up",
+    "name": "Capital Growth",
+    "actor": "System",
+    "count": "5.50%",
+    "time": "1Y"
+  },
+  {
+    "type": "up",
+    "name": "Balanced",
+    "actor": "System",
+    "count": "6.70%",
+    "time": "1Y"
+  },
+  {
+    "type": "down",
+    "name": "Modal Aman Ketika Pandemi",
+    "actor": "Investor",
+    "count": "5.23%",
+    "time": "1Y"
+  },
+  {
+    "type": "up",
+    "name": "Investment Special",
+    "actor": "System",
+    "count": "3.30%",
+    "time": "1Y"
+  }
+]

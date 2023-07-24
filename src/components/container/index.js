@@ -11,14 +11,15 @@ export default function Container({
   fixedTop,
   fixedBottom,
   spacer,
+  height,
 }) {
   return (
     <div
-      className={`container ${fullHeight ? "vh-100" : ""} ${
+      className={`container ${fullHeight && !height ? "vh-100" : ""} ${
         fixedTop ? "fixed-top" : ""
       }
       ${fixedBottom ? "fixed-bottom" : ""}`}
-      style={{ marginTop: -1 }}
+      style={{ marginTop: -1, height: height ? height : "" }}
     >
       <div
         className={`row ${
