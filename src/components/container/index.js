@@ -33,6 +33,7 @@ export default function Container({
           className={`col-xl-${spacer ? 12 : 4} col-lg-${
             spacer ? 12 : 6
           } col-md-${spacer ? 12 : 8} h-100 bg-${bg} ${padding ? "p-2" : ""}`}
+          style={{ borderRadius: spacer ? 20 : 0 }}
         >
           {children}
         </div>
