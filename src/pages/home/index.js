@@ -145,7 +145,13 @@ export default function Home() {
         />
         <div className="container-scroll gap-3 mb-1" onWheel={handleScroll}>
           {tipLists.map((item, index) => {
-            return <TipItem title={item} key={index} />;
+            return (
+              <TipItem
+                title={item}
+                key={index}
+                onClick={() => navigate("/worked")}
+              />
+            );
           })}
         </div>
         <Spacer height={10} />
