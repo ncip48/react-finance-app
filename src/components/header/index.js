@@ -11,13 +11,13 @@ export default function Header({ isBack, title, iconRight }) {
     <Container centerX bg="white" padding fixedTop height="3rem">
       <nav className="d-flex align-items-center justify-content-between bg-white h-100">
         {isBack && (
-          <div
-            className="px-2"
-            onClick={() => {
-              navigate(-1);
-            }}
-          >
-            <Icon name="chevron-left" />
+          <div className="px-2">
+            <Icon
+              name="chevron-left"
+              onClick={() => {
+                navigate(-1);
+              }}
+            />
           </div>
         )}
 

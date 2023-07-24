@@ -13,7 +13,9 @@ export default function Icon({
       <i
         className={`bi bi-${name} text-${theme} ${
           !badge ? "d-flex align-items-center" : ""
-        }`}
+        }
+        ${onClick ? "cursor-pointer" : ""}
+        `}
         style={{ color, fontSize: size, height: !badge ? size : "" }}
         onClick={onClick}
       >
