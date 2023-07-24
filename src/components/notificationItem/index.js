@@ -8,6 +8,7 @@ export default function NotificationItem({
   count,
   date,
   onClick,
+  unread,
 }) {
   return (
     <div
@@ -53,10 +54,19 @@ export default function NotificationItem({
           </small>
         </div>
         <div className="ms-auto pe-3">
-          {count && (
-            <span className="badge bg-primary rounded-pill">{count}</span>
-          )}
-          <Icon name="chevron-right" theme="darkgray" size=".9rem" />
+          <div className="d-flex align-items-center justify-content-center">
+            {unread && count === 0 && (
+              <span className="p-1 bg-primary border border-light rounded-circle me-2">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            )}
+            {count > 0 && (
+              <span className="badge bg-primary rounded-pill me-2">
+                {count}
+              </span>
+            )}
+            <Icon name="chevron-right" theme="darkgray" size=".9rem" />
+          </div>
         </div>
       </div>
     </div>

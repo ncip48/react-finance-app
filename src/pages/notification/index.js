@@ -24,8 +24,9 @@ export default function Notification() {
               title={item.title}
               subtitle={item.description}
               date={item.date}
-              count={item.count}
+              count={item.badgeCount}
               type={item.type}
+              unread={item.unread}
             />
           );
         })}
