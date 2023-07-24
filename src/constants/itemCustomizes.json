@@ -5,14 +5,17 @@
   },
   {
     "name": "Dark Mode",
-    "type": 1
+    "type": 1,
+    "isChecked": false
   },
   {
     "name": "Sign In with PIN Code",
-    "type": 1
+    "type": 1,
+    "isChecked": true
   },
   {
     "name": "Sign In with Fingerprint",
-    "type": 1
+    "type": 1,
+    "isChecked": false
   }
 ]
