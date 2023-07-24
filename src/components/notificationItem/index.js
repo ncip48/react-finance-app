@@ -47,11 +47,12 @@ export default function NotificationItem({
       <div className="ms-4 pb-3 d-flex border-bottom w-100 align-items-center">
         <div>
           <h6 className="m-0 fw-bold">{title}</h6>
-          <small className="text-muted fw-bold">{subtitle}</small>
-          <br />
-          <small className="text-darkgray" style={{ fontSize: ".75rem" }}>
-            {date}
-          </small>
+          <div className="d-flex flex-column">
+            <small className="text-muted fw-bold">{subtitle}</small>
+            <small className="text-darkgray" style={{ fontSize: ".75rem" }}>
+              {date}
+            </small>
+          </div>
         </div>
         <div className="ms-auto pe-3">
           <div className="d-flex align-items-center justify-content-center">
