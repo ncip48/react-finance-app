@@ -39,10 +39,26 @@ body {
   ) !important;
 }
 
+.bg-primary-light {
+  --bs-bg-opacity: 0.1;
+  background-color: rgba(
+    var(--bs-primary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
 .bg-warning-light {
   --bs-bg-opacity: 0.1;
   background-color: rgba(
     var(--bs-warning-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+.bg-success-light {
+  --bs-bg-opacity: 0.1;
+  background-color: rgba(
+    var(--bs-success-rgb),
     var(--bs-bg-opacity)
   ) !important;
 }

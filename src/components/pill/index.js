@@ -21,6 +21,13 @@ export default function Pill({ active, title, onClick, iconLeft, iconRight }) {
         />
       )}
       {title}
+      {iconRight && (
+        <Icon
+          name={iconRight}
+          theme={active ? "primary" : "darkgray"}
+          size=".8rem"
+        />
+      )}
     </div>
   );
 }

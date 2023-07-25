@@ -5,7 +5,15 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Account, Home, Notification, Product, Signin, Worked } from "../pages";
+import {
+  Account,
+  Home,
+  Notification,
+  Product,
+  Signin,
+  Transaction,
+  Worked,
+} from "../pages";
 
 export default function Routes() {
   return (
@@ -16,6 +24,7 @@ export default function Routes() {
           <Route path="/" element={<Navigate to="/signin" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/transaction" element={<Transaction />} />
           <Route path="/worked" element={<Worked />} />
           <Route path="/notification" element={<Notification />} />
           <Route path="/account" element={<Account />} />

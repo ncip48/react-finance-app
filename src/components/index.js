@@ -19,6 +19,7 @@ import NotificationItem from "./notificationItem";
 import ProfileItem from "./profileItem";
 import Tabs from "./tabs";
 import ProductItem from "./productItem";
+import TransactionItem from "./transactionItem";
 
 export {
   Button,
@@ -42,4 +43,5 @@ export {
   ProfileItem,
   Tabs,
   ProductItem,
+  TransactionItem,
 };

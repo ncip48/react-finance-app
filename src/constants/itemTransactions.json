@@ -1,0 +1,32 @@
+[
+  {
+    "type": "Subscription",
+    "date": "19/09/2020 14:21",
+    "status": 0,
+    "name": "Bahana Dana Likuid",
+    "description": "Create New Investment Account No.",
+    "amount": "2838909,29",
+    "price": "-",
+    "total": "-"
+  },
+  {
+    "type": "Subscription",
+    "date": "19/09/2020 14:21",
+    "status": 1,
+    "name": "Bahana Dana Likuid",
+    "description": "Create New Investment Account No.",
+    "amount": "2838909,29",
+    "price": "-",
+    "total": "-"
+  },
+  {
+    "type": "Subscription",
+    "date": "19/09/2020 14:21",
+    "status": 2,
+    "name": "Bahana Dana Likuid",
+    "description": "Create New Investment Account No.",
+    "amount": "2838909,29",
+    "price": "-",
+    "total": "-"
+  }
+]

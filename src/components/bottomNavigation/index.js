@@ -40,7 +40,7 @@ export default function BottomNavigation({ items = itemBottoms, active }) {
               )}
               <div className="d-flex flex-column align-items-center">
                 <Icon
-                  name={active === item.name ? `${item.icon}-fill` : item.icon}
+                  name={active === item.name ? `${item.icon}` : item.icon}
                   theme={
                     center === index
                       ? "primary"
