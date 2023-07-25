@@ -31,7 +31,12 @@ export default function Portofolio() {
         title="My Portofolio"
         isBack={false}
         noCenter
-        iconRight={<Icon name="search" />}
+        iconRight={
+          <div className="d-flex align-items-center gap-3">
+            <Icon name="search" />
+            <Icon name="plus" size="2rem" />
+          </div>
+        }
       />
       <Spacer height={55} bg="white" />
       <Container centerX bg="white">
