@@ -1,7 +1,6 @@
 import React from "react";
 import {
   BottomNavigation,
-  Card,
   Container,
   Flex,
   Header,
