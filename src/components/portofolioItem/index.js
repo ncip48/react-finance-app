@@ -63,7 +63,7 @@ export default function PortofolioItem({
               className="text-darkgray"
               style={{ fontSize: ".7rem", fontWeight: 500 }}
             >
-              Amount (IDR)
+              Earnings
             </label>
             <label
               className="fw-bold text-warning"
@@ -77,7 +77,7 @@ export default function PortofolioItem({
               className="text-darkgray"
               style={{ fontSize: ".7rem", fontWeight: 500 }}
             >
-              Total (Unit)
+              Returns
             </label>
             <div className="d-flex align-items-center">
               <Icon
