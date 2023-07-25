@@ -20,7 +20,17 @@ export default function Header({ isBack, title, iconRight, noCenter }) {
             />
           </div>
         ) : (
-          !noCenter && <div className="px-2"></div>
+          !noCenter && (
+            <div className="px-2">
+              <Icon
+                name="circle-fill"
+                theme="white"
+                onClick={() => {
+                  navigate(-1);
+                }}
+              />
+            </div>
+          )
         )}
 
         <span className="fs-6 fw-bold mb-0 h1">{title}</span>
