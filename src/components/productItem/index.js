@@ -95,17 +95,25 @@ export default function ProductItem({
             >
               Exp. Return 1Y
             </label>
-            <label
-              className={returnType === "up" ? "text-warning" : "text-danger"}
-              style={{
-                fontSize: ".7rem",
-                fontWeight: 500,
-                marginTop: -2,
-                textAlign: "end",
-              }}
-            >
-              {returnCount}%
-            </label>
+            <div className="d-flex align-items-center">
+              <Icon
+                name={returnType === "up" ? "caret-up-fill" : "caret-down-fill"}
+                theme={returnType === "up" ? "warning" : "danger"}
+                size=".8rem"
+              />
+              <label
+                className={returnType === "up" ? "text-warning" : "text-danger"}
+                style={{
+                  fontSize: ".7rem",
+                  fontWeight: 500,
+                  marginTop: -2,
+                  textAlign: "end",
+                  marginLeft: 5,
+                }}
+              >
+                {returnCount}%
+              </label>
+            </div>
           </div>
         </div>
       </Card>
