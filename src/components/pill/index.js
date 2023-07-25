@@ -1,10 +1,11 @@
 import React from "react";
+import Icon from "../icon";
 
-export default function Pill({ active, title, onClick, index }) {
+export default function Pill({ active, title, onClick, iconLeft, iconRight }) {
   return (
     <div
-      className={`px-3 py-3 badge rounded-pill cursor-pointer ${
-        active ? "active bg-primary text-primary" : "bg-light text-darkgray"
+      className={`d-flex align-items-center gap-2 px-3 py-3 badge rounded-pill cursor-pointer ${
+        active ? "active bg-primary text-primary" : "bg-white text-darkgray"
       }`}
       onClick={onClick}
       style={{
@@ -12,6 +13,13 @@ export default function Pill({ active, title, onClick, index }) {
         fontSize: ".75rem",
       }}
     >
+      {iconLeft && (
+        <Icon
+          name={iconLeft}
+          theme={active ? "primary" : "darkgray"}
+          size=".8rem"
+        />
+      )}
       {title}
     </div>
   );

@@ -7,7 +7,7 @@ export default function TipItem({ title, onClick }) {
     <div
       className="cursor-pointer"
       onClick={onClick}
-      style={{ width: "10rem" }}
+      style={{ width: "10rem", marginLeft: 5, marginRight: 5 }}
     >
       <Card style={{ width: "inherit", height: "100%", borderRadius: 16 }}>
         <Icon name="info-circle-fill" theme="primary" />

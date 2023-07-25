@@ -17,6 +17,8 @@ import NewsItem from "./newsItem";
 import Header from "./header";
 import NotificationItem from "./notificationItem";
 import ProfileItem from "./profileItem";
+import Tabs from "./tabs";
+import ProductItem from "./productItem";
 
 export {
   Button,
@@ -38,4 +40,6 @@ export {
   Header,
   NotificationItem,
   ProfileItem,
+  Tabs,
+  ProductItem,
 };

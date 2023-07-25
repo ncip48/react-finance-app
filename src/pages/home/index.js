@@ -146,7 +146,7 @@ export default function Home() {
           hasSeeMore
           onClick={() => navigate("/worked")}
         />
-        <div className="container-scroll gap-3 mb-1" onWheel={handleScroll}>
+        <div className="container-scroll gap-2 mb-1" onWheel={handleScroll}>
           {tipLists.map((item, index) => {
             return (
               <TipItem
@@ -163,7 +163,7 @@ export default function Home() {
           hasSeeMore
           onClick={() => navigate("/worked")}
         />
-        <div className="container-scroll gap-3 mb-1" onWheel={handleScroll}>
+        <div className="container-scroll gap-2 mb-1" onWheel={handleScroll}>
           {itemNews.map((item, index) => {
             return (
               <NewsItem

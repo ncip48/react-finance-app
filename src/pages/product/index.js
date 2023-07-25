@@ -1,51 +1,68 @@
 import React from "react";
 import {
-  Avatar,
   BottomNavigation,
-  Card,
   Container,
-  Flex,
+  Header,
   Icon,
-  Navbar,
+  Pill,
+  ProductItem,
   Spacer,
+  Tabs,
 } from "../../components";
-import itemBottoms from "../../constants/itemBottoms";
-import { formatRupiah } from "../../helpers";
+import itemProducts from "../../constants/itemProducts.json";
+
+const tabItems = ["Mutual Funds", "Bonds", "Stocks"];
+const pillLists = [
+  {
+    name: "Filter",
+    icon: "sliders",
+  },
+  {
+    name: "Sort",
+    icon: "arrow-down-up",
+  },
+  {
+    name: "Compare",
+    icon: "layers",
+  },
+];
 
 export default function Product() {
+  const [active, setActive] = React.useState(0);
   return (
     <>
-      <Navbar noMenu fixed>
-        <Icon name="search" theme="white" />
-        <Icon name="star" theme="white" />
-        <Icon name="bell" theme="white" badge="9+" />
-        <Avatar source={require("../../assets/pp.jpg")} />
-      </Navbar>
-      <Spacer height={55} bg="primary" />
-      <Container centerX bg="primary">
-        <div className="bg-primary">
-          <small className="text-white fw-normal mb-1">Total Balance</small>
-          <h2 className="text-white">{formatRupiah("1315800622,31")}</h2>
-          <Flex align="center" justify="flex-start">
-            <Icon name="caret-up-fill" theme="warning" size=".8rem" />
-            <small className="text-white fw-normal mb-0 ms-2">
-              {formatRupiah("243489330,00")} (+14.37%)
-            </small>
-          </Flex>
-          <Spacer height={130} bg="primary" />
+      <Header
+        title="Products"
+        isBack={false}
+        center
+        iconRight={<Icon name="search" />}
+      />
+      <Spacer height={50} bg="gray" />
+      <Tabs items={tabItems} active={active} onChange={setActive} />
+      <Container centerX bg="gray" fullHeight>
+        <div className="container-scroll gap-2 my-2">
+          {pillLists.map((item, index) => {
+            return <Pill title={item.name} iconLeft={item.icon} key={index} />;
+          })}
         </div>
+        {itemProducts.map((item, index) => {
+          return (
+            <ProductItem
+              star={item.star}
+              type={item.type}
+              grow={item.grow}
+              name={item.name}
+              image={require("../../assets/" + item.image)}
+              minPurchase={item.minPurchase}
+              price={item.price}
+              returnCount={item.return}
+              returnType={item.returnType}
+              key={index}
+            />
+          );
+        })}
       </Container>
-      <Container centerX bg="gray">
-        <Card
-          style={{
-            position: "absoulte",
-            top: -50,
-          }}
-        >
-          <h5>asodaso</h5>
-        </Card>
-      </Container>
-      <BottomNavigation items={itemBottoms} active="Products" />
+      <BottomNavigation active="Products" />
     </>
   );
 }

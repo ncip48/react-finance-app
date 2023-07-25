@@ -12,12 +12,14 @@ export default function Container({
   fixedBottom,
   spacer,
   height,
+  noPaddingContainer,
 }) {
   return (
     <div
       className={`container-fluid ${fullHeight && !height ? "vh-100" : ""} ${
         fixedTop ? "fixed-top" : ""
       }
+      ${noPaddingContainer ? "p-0" : ""}
       ${fixedBottom ? "fixed-bottom" : ""}`}
       style={{ marginTop: -1, height: height ? height : "" }}
     >

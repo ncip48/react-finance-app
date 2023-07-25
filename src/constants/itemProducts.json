@@ -1,0 +1,35 @@
+[
+  {
+    "star": 4.5,
+    "type": "Money Market",
+    "grow": "Conservative",
+    "name": "Bahana Dana Likuid",
+    "image": "pp.jpg",
+    "minPurchase": 300000,
+    "price": "1168,40",
+    "return": 5.5,
+    "returnType": "up"
+  },
+  {
+    "star": 4.0,
+    "type": "Equity",
+    "grow": "Aggresive  ",
+    "name": "Aurora Dana Ekuitas",
+    "image": "pp.jpg",
+    "minPurchase": 200000,
+    "price": "2455,08",
+    "return": 2.47,
+    "returnType": "down"
+  },
+  {
+    "star": 4.1,
+    "type": "Fixed Income",
+    "grow": "Conservative",
+    "name": "Medali Dua",
+    "image": "pp.jpg",
+    "minPurchase": 100000,
+    "price": "2374,85",
+    "return": 16.65,
+    "returnType": "up"
+  }
+]

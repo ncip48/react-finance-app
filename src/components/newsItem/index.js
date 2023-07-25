@@ -6,7 +6,7 @@ export default function NewsItem({ title, image, onClick }) {
     <div
       className="cursor-pointer"
       onClick={onClick}
-      style={{ width: "10rem" }}
+      style={{ width: "10rem", marginLeft: 5, marginRight: 5 }}
     >
       <Card
         noPadding
