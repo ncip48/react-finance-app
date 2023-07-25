@@ -37,7 +37,7 @@ export default function Product() {
         center
         iconRight={<Icon name="search" />}
       />
-      <Spacer height={50} bg="gray" />
+      <Spacer height={48} bg="gray" />
       <Tabs items={tabItems} active={active} onChange={setActive} />
       <Container centerX bg="gray" fullHeight>
         <div className="container-scroll gap-2 my-2">
