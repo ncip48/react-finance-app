@@ -49,7 +49,7 @@ export default function TransactionItem({
           <h6 className="m-0 p-0 fw-bold" style={{ fontSize: ".9rem" }}>
             {name}
           </h6>
-          <h6 className="m-0 p-0 text-gray2" style={{ fontSize: ".85rem" }}>
+          <h6 className="m-0 p-0 text-darkgray" style={{ fontSize: ".85rem" }}>
             {description}
           </h6>
         </div>
