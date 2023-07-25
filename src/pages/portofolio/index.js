@@ -1,51 +1,77 @@
 import React from "react";
 import {
-  Avatar,
   BottomNavigation,
   Card,
   Container,
   Flex,
+  Header,
   Icon,
-  Navbar,
+  Pill,
+  PortofolioItem,
   Spacer,
 } from "../../components";
 import itemBottoms from "../../constants/itemBottoms";
 import { formatRupiah } from "../../helpers";
+import itemPortofolios from "../../constants/itemPortofolios.json";
+
+const pillLists = [
+  {
+    name: "Filter",
+    icon: "sliders",
+  },
+  {
+    name: "Sort",
+    icon: "arrow-down-up",
+  },
+];
 
 export default function Portofolio() {
   return (
     <>
-      <Navbar noMenu fixed>
-        <Icon name="search" theme="white" />
-        <Icon name="star" theme="white" />
-        <Icon name="bell" theme="white" badge="9+" />
-        <Avatar source={require("../../assets/pp.jpg")} />
-      </Navbar>
-      <Spacer height={55} bg="primary" />
-      <Container centerX bg="primary">
-        <div className="bg-primary">
-          <small className="text-white fw-normal mb-1">Total Balance</small>
-          <h2 className="text-white">{formatRupiah("1315800622,31")}</h2>
+      <Header
+        title="My Portofolio"
+        isBack={false}
+        noCenter
+        iconRight={<Icon name="search" />}
+      />
+      <Spacer height={55} bg="white" />
+      <Container centerX bg="white">
+        <div className="bg-white mb-4">
+          <small className="text-dark fw-normal mb-1">Total Balance</small>
+          <h2 className="text-dark fw-bold">{formatRupiah("1315800622,31")}</h2>
           <Flex align="center" justify="flex-start">
             <Icon name="caret-up-fill" theme="warning" size=".8rem" />
-            <small className="text-white fw-normal mb-0 ms-2">
+            <small className="text-warning fw-normal mb-0 ms-2">
               {formatRupiah("243489330,00")} (+14.37%)
             </small>
           </Flex>
-          <Spacer height={130} bg="primary" />
         </div>
       </Container>
-      <Container centerX bg="gray">
-        <Card
-          style={{
-            position: "absoulte",
-            top: -50,
-          }}
-        >
-          <h5>asodaso</h5>
-        </Card>
+      <Container centerX bg="gray" fullHeight>
+        <div className="container-scroll gap-2 my-3 mb-2">
+          {pillLists.map((item, index) => {
+            return <Pill title={item.name} iconLeft={item.icon} key={index} />;
+          })}
+        </div>
+        {itemPortofolios.map((item, index) => {
+          return (
+            <PortofolioItem
+              name={item.name}
+              goal={item.goal}
+              image={require("../../assets/" + item.image)}
+              status={item.status}
+              currentBalance={item.currentBalance}
+              earnings={item.earnings}
+              returnCount={item.returns}
+              returnType={item.returnType}
+              needOptimization={item.needOptimization}
+              key={index}
+            />
+          );
+        })}
       </Container>
-      <BottomNavigation items={itemBottoms} active="Products" />
+
+      <BottomNavigation items={itemBottoms} active="Portofolio" />
     </>
   );
 }

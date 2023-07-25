@@ -5,7 +5,7 @@ import Icon from "../icon";
 import Container from "../container";
 import { useNavigate } from "react-router-dom";
 
-export default function Header({ isBack, title, iconRight, center }) {
+export default function Header({ isBack, title, iconRight, noCenter }) {
   const navigate = useNavigate();
   return (
     <Container centerX bg="white" padding fixedTop height="3rem">
@@ -20,7 +20,7 @@ export default function Header({ isBack, title, iconRight, center }) {
             />
           </div>
         ) : (
-          <div className="px-2"></div>
+          !noCenter && <div className="px-2"></div>
         )}
 
         <span className="fs-6 fw-bold mb-0 h1">{title}</span>

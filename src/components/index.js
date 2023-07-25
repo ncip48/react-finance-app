@@ -20,6 +20,7 @@ import ProfileItem from "./profileItem";
 import Tabs from "./tabs";
 import ProductItem from "./productItem";
 import TransactionItem from "./transactionItem";
+import PortofolioItem from "./portofolioItem";
 
 export {
   Button,
@@ -44,4 +45,5 @@ export {
   Tabs,
   ProductItem,
   TransactionItem,
+  PortofolioItem,
 };

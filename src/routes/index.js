@@ -9,6 +9,7 @@ import {
   Account,
   Home,
   Notification,
+  Portofolio,
   Product,
   Signin,
   Transaction,
@@ -25,6 +26,7 @@ export default function Routes() {
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/transaction" element={<Transaction />} />
+          <Route path="/portofolio" element={<Portofolio />} />
           <Route path="/worked" element={<Worked />} />
           <Route path="/notification" element={<Notification />} />
           <Route path="/account" element={<Account />} />

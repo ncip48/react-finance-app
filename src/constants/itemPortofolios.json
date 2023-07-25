@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Road To Lombok",
+    "goal": true,
+    "image": "pp.jpg",
+    "status": 0,
+    "currentBalance": "4133691,00",
+    "earnings": "38909,29",
+    "returns": 0.27,
+    "returnType": "up",
+    "needOptimization": true
+  },
+  {
+    "name": "Default Non Goal",
+    "goal": false,
+    "image": "pp.jpg",
+    "status": 0,
+    "currentBalance": "4133691,00",
+    "earnings": "38909,29",
+    "returns": 0.27,
+    "returnType": "up",
+    "needOptimization": true
+  }
+]
