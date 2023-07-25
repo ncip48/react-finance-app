@@ -37,7 +37,7 @@ export default function Transaction() {
         center
         iconRight={<Icon name="search" />}
       />
-      <Spacer height={48} bg="gray" />
+      <Spacer height={48} bg="white" />
       <Tabs items={tabItems} active={active} onChange={setActive} />
       <Container centerX bg="gray" fullHeight>
         <div className="container-scroll gap-2 my-2">
